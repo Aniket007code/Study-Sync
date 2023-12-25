@@ -77,6 +77,87 @@
     background-color: rgb(78, 16, 136);
 }
 
+.main-content{
+    width: 100%;
+    border: 1px solid green;
+}
+
+.main-section{
+    border: 1px solid orangered;
+    width: 75%;
+    /* height: 80px; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content-left{
+    border: 1px solid palevioletred;
+    /* margin: 0 auto; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.content-intro{
+    color: rgb(202, 158, 244);
+}
+
+.content-desc{
+    color: rgb(181, 174, 174);
+}
+
+.main-section-button-container{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+.start-btn,.tour-btn{
+    background-color: rgb(153, 93, 209);
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    text-align: center;
+    /* padding: 0.5rem; */
+    padding: 0.5rem 0.75rem;
+    /* margin-top: 20rem; */
+}
+
+.tour-btn{
+    background-color: rgb(61, 54, 54);
+}
+
+.content-right{
+    border: 2px solid navy;
+    width: 100%;
+    /* height: inherit; */
+}
+
+.main-content-img-container{
+    border: 1px solid red;
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+
+   
+}
+
+.main-content-img-container>img{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
 @media screen and (max-width :865px) {
     .hamburger-menu{
         display:block;
