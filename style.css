@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    border: 1px solid red;
+    width: 100%;
+    height: 80px;
+}
+
+.main-header-container{
+    border: 1px solid purple;
+    width: 75%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.logo-img{
+    width: 25px;
+}
+
+.nav-container{
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.nav-container>li,a{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(45, 43, 43);
+    
+}
+
+.nav-container>li>a:hover{
+    color: rgb(153, 93, 209);
+    /* color: rgb(189, 52, 61); */
+
+}
+
+.contact-button{ 
+    /* width: 100px; */
+    /* height: 30px; */
+    background-color: rgb(153, 93, 209);
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    text-align: center;
+    /* padding: 0.5rem; */
+    padding: 0.5rem 0.75rem;
+    /* align-items: center; */
+    /* margin: auto 0; */
+
+}
+
+.hamburger-menu{
+    width:30px;
+    margin-right: 1rem;
+    display: none;
+
+}
+
+.contact-button:hover{
+    background-color: rgb(78, 16, 136);
+}
+
+@media screen and (max-width :865px) {
+    .hamburger-menu{
+        display:block;
+    }
+
+    .contact-button{
+       display: none;
+    }
+
+    .nav-container{
+        display: none;
+    }
+    
+}
+
+
