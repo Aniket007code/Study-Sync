@@ -5,13 +5,13 @@
 }
 
 .header{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     height: 80px;
 }
 
 .main-header-container{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     width: 75%;
     height: 80px;
     margin: 0 auto;
@@ -79,11 +79,11 @@
 
 .main-content{
     width: 100%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .main-section{
-    border: 1px solid orangered;
+    /* border: 1px solid orangered; */
     width: 75%;
     /* height: 80px; */
     margin: 0 auto;
@@ -97,20 +97,35 @@
 }
 
 .content-left{
-    border: 1px solid palevioletred;
+    /* border: 1px solid black; */
     /* margin: 0 auto; */
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+    animation: slideFromLeft 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideFromLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+    
 }
 
 .content-intro{
-    color: rgb(202, 158, 244);
+    color: rgb(85, 33, 133);
 }
 
 .content-desc{
-    color: rgb(181, 174, 174);
+    color: rgb(135, 125, 125);
 }
 
 .main-section-button-container{
@@ -137,15 +152,15 @@
 }
 
 .content-right{
-    border: 2px solid navy;
+    /* border: 2px solid navy; */
     width: 100%;
     /* height: inherit; */
 }
 
 .main-content-img-container{
-    border: 1px solid red;
-    width: 60%;
-    height: 300px;
+    /* border: 1px solid red; */
+    width: 35vw;
+    height: 55vh;
     margin: 0 auto;
 
    
@@ -156,6 +171,48 @@
     height: 100%;
     border: none;
     border-radius: 10px;
+}
+
+.company-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    /* margin-bottom: 1rem; */
+}
+.company-container-heading{
+    font-size: 2rem;
+}
+.company-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    background-color: rgb(216, 215, 215);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    border: none;
+    /* outline: none; */
+    padding: 0.5rem;
+}
+
+.company-logo-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem;
+}
+
+.company-logo{
+    width: 1.5rem;
+
+}
+
+.company-text{
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 @media screen and (max-width :865px) {
@@ -172,5 +229,25 @@
     }
     
 }
+
+@media screen and (min-width :768px) {
+    .main-section{
+        flex-direction: row;
+    }
+    .content-left{
+        text-align: start;
+    }
+    .main-section-button-container{
+        justify-content: start;
+
+    }
+
+    .company-grid{
+        grid-template-columns: repeat(4,1fr);
+
+    }
+
+}
+
 
 
