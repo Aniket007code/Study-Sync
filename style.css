@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+
+
+
 .header{
     /* border: 1px solid red; */
     width: 100%;
@@ -147,6 +150,18 @@
     /* margin-top: 20rem; */
 }
 
+
+.start-btn:hover{
+    background-color: rgb(78, 16, 136);
+    
+}
+
+.tour-btn:hover{
+    background-color: rgb(37, 33, 33);
+    
+    
+}
+
 .tour-btn{
     background-color: rgb(61, 54, 54);
 }
@@ -272,6 +287,34 @@
     
 }
 
+.grid-card-container:nth-child(2){
+    background-color: rgb(233, 45, 117);
+}
+
+.grid-card-container:nth-child(3){
+    background-color: rgb(252, 171, 79)
+}
+
+.grid-card-container:nth-child(1){
+    background-color: #a168fe
+}
+
+/* #2471A3 */
+
+.grid-card-container:nth-child(4){
+    background-color:  #2471A3
+}
+
+.grid-card-container:nth-child(6){
+    background-color:  #FF7F50
+}
+
+.grid-card-container:nth-child(5){
+    background-color:  rgb(69, 68, 68)
+}
+
+
+
 .grid-img-container{
     
     width: 50px;
@@ -331,6 +374,8 @@
 
 }
 
+
+
 .testimonial-card-para{
     text-align: center;
     margin-top: 0.7rem;
@@ -353,6 +398,7 @@
 
 .testimonial-card-details{
     margin-bottom: 0.7rem;
+    text-align: center;
 }
 
 .testimonial-card-name{
@@ -436,8 +482,15 @@
     text-align: center;
     /* padding: 0.5rem; */
     padding: 0.5rem 0.75rem;
+    cursor: pointer;
 
 }
+
+.newsletter-btn:hover{
+  background-color: rgb(78, 16, 136);
+}
+
+
 
 .privacy-policy>p{
     font-size: 0.8rem;
