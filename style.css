@@ -175,7 +175,7 @@
 .main-content-img-container{
     /* border: 1px solid red; */
     width: 35vw;
-    height: 55vh;
+    height: 45vh;
     margin: 0 auto;
 
    
@@ -606,6 +606,10 @@
         display: none;
     }
 
+    .main-content-img-container{
+        height: 25vh;
+    }
+
 
     /* responsive footer */
 
@@ -684,17 +688,21 @@
         display: none;
 
     }
+
+   
     .newsletter-btn{
         margin-top: 0.7rem;
     }
 
     .newsletter-container{
+        width: 100%;
         justify-content: center;
         align-items: center;
         /* height: 300px; */
     }
 
     .newsletter-right-section{
+        /* display: block; */
         width: 100%;
         height: 400px;
         gap: 2rem;
